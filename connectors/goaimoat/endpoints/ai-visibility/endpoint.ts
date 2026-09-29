@@ -25,8 +25,6 @@ export default defineEndpoint({
     request: {
         method: "POST",
         path: "/api/audit",
-        baseUrl: "https://mcp.goaimoat.com",
     },
     input: { schema: { body: zAuditBody } },
-    timeouts: { requestMs: 30_000, runMs: 60_000 },
 });
