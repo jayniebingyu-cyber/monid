@@ -11,4 +11,4 @@ export const zAuditBody = z.object({
     score: z.number().int().min(0).max(30).optional().describe(
         "Optional known 0-30 checklist score. If provided, a tier + fix plan is included.",
     ),
-});
+}).strict();

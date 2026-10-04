@@ -25,7 +25,7 @@ Deno.test("goaimoat#ai-visibility happy: returns a diagnosis for the brand", asy
 
 Deno.test("goaimoat#ai-visibility provider error: digested envelope, zero usage", async () => {
     const unit = await testSealedUnit("goaimoat#ai-visibility");
-    const fixture = await loadFixture(`${fixturesDir}provider-error.json`);
+    const fixture = await loadFixture(`${fixturesDir}synthetic-provider-error.json`);
     const result = await runEndpoint({
         unit,
         input: { body: { brand_name: "GoAI Moat" } },
